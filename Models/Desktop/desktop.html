@@ -4,6 +4,14 @@
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">-->
 <!--    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="themSwitcher/custom.css">
+<!--    <link-->
+<!--            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"-->
+<!--            rel="stylesheet"-->
+<!--            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"-->
+<!--            crossorigin="anonymous"-->
+<!--    />-->
 <!--    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/carousel.rtl.css">-->
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -13,6 +21,13 @@
 <!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--    <script src="themSwitcher/switch.js"></script>-->
+<!--    <script-->
+<!--            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"-->
+<!--            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"-->
+<!--            crossorigin="anonymous"-->
+<!--    ></script>-->
+
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
@@ -33,8 +48,8 @@
             bottom: 0;
             width: 100%;
         }
-        #header_back path{
-            fill: white;
+        #header_svg{
+            fill: #f8f9fa;
         }
         .heading-content{
             position: absolute;
@@ -72,12 +87,12 @@
             color: black;
         }
         .container{
-            padding: 80px 80px;
+            padding: 5% 5%;
         }
         svg + p{
             padding-right: 10px;
         }
-        .btn{
+        .card-btn{
             padding: 10px 40px;
             text-align: center;
             margin-bottom: 25px;
@@ -85,7 +100,7 @@
             border-color: darksalmon;
             /*background-color: yellow;*/
         }
-        .btn1:hover{
+        .card-btn:hover{
             background-color: darksalmon;
         }
         .testi-img .img-box{
@@ -118,7 +133,7 @@
            font-size: 25px;
         }
         .carousel-control-prev{
-            margin-left: 8px;
+            margin-right: 8px;
         }
         .carousel-control-next, .carousel-control-prev{
             height: 30px;
@@ -130,51 +145,78 @@
             /*border-width: 35px;*/
         }
 
-
-        /*section.sec2{*/
-        /*    width: 100%;*/
-        /*    height: 100vh;*/
-        /*    background: white;*/
-        /*}*/
+        .footer {
+            width: 100%;
+            position: relative;
+            /*height: 114px;*/
+            z-index: -10;
+            height: 200px;
+            background-color: #3b3939;
+        }
     </style>
 </head>
 <body style="font-family: 'B Nazanin',serif">
 <header>
     <nav style="opacity: 0.8" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-    <!--            <a class="navbar-brand" href="#">-->
-    <!--                <img src="multi_logo_174x79.png" alt="" width="100" height="39" class="d-inline-block align-text-top"></a>-->
-
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#header"><b>بخش اول</b></a>
+                        <a  class="nav-link" aria-current="page" href="#header"><b>بخش اول</b></a>
                     </li>
                     <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#second"><b>بخش دوم</b></a>
+                        <a class="nav-link" href="#cards"><b>بخش دوم</b></a>
                     </li>
                     <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#"><b>بخش سوم</b></a>
+                        <a  class="nav-link" href="#"><b>بخش سوم</b></a>
                     </li>
                     <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#"><b>بخش چهارم</b></a>
+                        <a class="nav-link" href="#"><b>بخش چهارم</b></a>
                     </li>
                     <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#"><b>بخش پنجم</b></a>
+                        <a  class="nav-link" href="#"><b>بخش پنجم</b></a>
                     </li>
                     <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#"><b>بخش ششم</b></a>
+                        <a class="nav-link" href="#comments"><b>بخش ششم</b></a>
                     </li>
                     <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#seventh"><b>بخش هفتم</b></a>
+                        <a class="nav-link" href="#news"><b>بخش هفتم</b></a>
                     </li>
                     <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#"><b>بخش هشتم</b></a>
+                        <a class="nav-link" href="#footer"><b>بخش هشتم</b></a>
                     </li>
-                    <li class="nav-item">
-                        <a style="color: white" class="nav-link" href="#"><b>بخش نهم</b></a>
-                    </li>
+
                 </ul>
+                <div class="d-flex">
+                    <div class="form-check form-switch ms-auto mt-3 me-3">
+                        <label class="form-check-label ms-3" for="lightSwitch">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="25"
+                                    height="25"
+                                    fill="currentColor"
+                                    class="bi bi-brightness-high"
+                                    viewBox="0 0 16 16"
+                            >
+                                <path
+                                        d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                                />
+                            </svg>
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="lightSwitch" />
+                    </div>
+                </div>
                 <a class="d-flex">
                     <img src="Files/red_logo_174x79.png" alt="" width="100" height="39" class="d-inline-block align-text-top"></a>
 
@@ -188,7 +230,8 @@
     <!--    بخش اول-->
    <div id="header" class="header">
        <section>
-           <svg id="header_back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path d="M0,128L60,112C120,96,240,64,360,80C480,96,600,160,720,165.3C840,171,960,117,1080,101.3C1200,85,1320,107,1380,117.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+           <svg id="header_back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+               <path id="header_svg" d="M0,128L60,112C120,96,240,64,360,80C480,96,600,160,720,165.3C840,171,960,117,1080,101.3C1200,85,1320,107,1380,117.3L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 <!--           <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path d="M0,128L60,112C120,96,240,64,360,80C480,96,600,160,720,165.3C840,171,960,117,1080,101.3C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>-->
            <div class="heading-content">
                <h1>ایمن پردازان</h1>
@@ -203,8 +246,8 @@
 
     <!--    بخش دوم-->
 
-        <div id="second" style="text-align: center" class="container">
-            <h1><b>ایمن پردازان</b></h1>
+        <div id="cards" style="text-align: center" class="container">
+            <p style="font-size: 50px; font-weight: bold">ایمن پردازان</p>
             <br>
             <br>
             <div class="row d-flex justify-content-center">
@@ -226,10 +269,6 @@
                             <ul class="list-group list-group-flush">
 
                                 <li class="list-group-item d-flex align-items-top">
-<!--                                    <span class="badge bg-warning rounded-pill">-->
-<!--                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">-->
-<!--                                             <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>-->
-<!--                                        </svg>-->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
                                         <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
                                     </svg>
@@ -256,7 +295,7 @@
 
                         </div>
                         <div>
-                            <a class="btn btn1" href="https://www.linkedin.com/in/fatemeh-shahali-727b23213/">linkedin</a>
+                            <a class="btn card-btn" href="https://www.linkedin.com/in/fatemeh-shahali-727b23213/">linkedin</a>
                         </div>
                     </div>
 
@@ -309,7 +348,7 @@
 
                         </div>
                         <div>
-                            <a class="btn btn1" href="https://www.linkedin.com/in/fatemeh-bahrani-a5682b182">linkedin</a>
+                            <a class="btn card-btn" href="https://www.linkedin.com/in/fatemeh-bahrani-a5682b182">linkedin</a>
                         </div>
                     </div>
 
@@ -334,21 +373,16 @@
     </div>
 
     <!--    بخش ششم-->
-    <div>
-
-    </div>
-
-    <!--    بخش هفتم-->
-    <div id="seventh" class="container">
-        <p style="font-weight: bold; font-size: 50px; padding-bottom: 15px" class="text-center"> نظرات مشتریان</p>
+    <div style="width: 75%" id="comments" class="container">
+        <p style="font-weight: bold; font-size: 50px; padding-bottom: 30px" class="text-center"> نظرات مشتریان</p>
         <div style="background-color: #ebded8; box-shadow: 0 10px 20px rgba(0,0,0,4), 0 4px 8px rgba(0,0,0,.06);
-         border-radius: 3%; border-color: green"
+         border-radius: 30px"
              class="row align-items-center">
             <div class="col-md-6 testi-img">
                 <div class="img-box">
                     <div class="circle"></div>
                     <div class="img-box-inner">
-                        <img src="Files/person1.png" alt="testi img" width="350px" height="500px">
+                        <img src="Files/person1.png" alt="testi img" width="340px" height="500px">
                     </div>
 
                 </div>
@@ -357,10 +391,13 @@
                 <div id="myCarousel" class="carousel slide" data-bs-interval="2000" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item testi-item active" data-color="darksalmon" data-img="Files/person1.png">
-                            <p>این سایت خیلی خوبه من از وقتی از تخصصشون استفاده کردم مشکل امنیتی خاصی برام پیش نیومده و به همه معرفیشون می‌کنم.</p>
+                            <p style="color: black">این تیم کارشون خیلی خوبه من از وقتی از تخصصشون استفاده کردم مشکل امنیتی خاصی برام پیش نیومده و به همه معرفیشون می‌کنم.</p>
                         </div>
                         <div class="carousel-item testi-item" data-color="#EBAAA7" data-img="Files/person2.png">
-                            <p>این سایت خیلی خوبه من از وقتی از تخصصشون استفاده کردم مشکل امنیتی خاصی برام پیش نیومده و به همه معرفیشون می‌کنم.</p>
+                            <p style="color: black">من برای اپلیکیشن فروشگاهم به این تیم، پروژه سفارش دادم. از نتیجه کارشون واقعا راضی بودم.</p>
+                        </div>
+                        <div class="carousel-item testi-item" data-color="#E0C6E1FF" data-img="Files/person3.png">
+                            <p style="color: black">هم پروژه امنیت شبکه و هم پروژه طراحی سایتی که به این تیم سفارش داده بودیم، برامون دستاورد خوبی داشت.</p>
                         </div>
                     </div>
                     <button class="carousel-control-next" data-bs-target="#myCarousel" type="button" data-bs-slide="next">
@@ -377,22 +414,92 @@
 
     </div>
 
+    <!--    بخش هفتم-->
+    <div style="width: 70%; margin-bottom: -10%" id="news" class="container">
+        <form id="news-border" style="background-color: #ebded8; border-radius: 20px" class="row g-3">
+            <p style="font-weight: bold; font-size: 30px; padding-right: 25px; color: #210246">خبرنامه</p>
+            <div style="padding-right: 25px; padding-bottom: 30px; margin-top: 0" class="col-sm-3">
+                <input  type="text" class="form-control" id="name" placeholder="نام">
+            </div>
+            <div style="margin-top: 0" class="col-sm-3">
+                <input type="text" class="form-control" id="surname" placeholder="نام خانوادگی">
+            </div>
+            <div style="margin-top: 0" class="col-sm-3">
+                <input style="text-align: right" type="email" class="form-control" id="email" placeholder="ایمیل">
+            </div>
+            <div style="margin-top: 0" class="col-sm-3">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#MyModal">تایید</button>
+            </div>
+
+        </form>
+
+        <!-- Modal -->
+        <div class="modal fade" id="MyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div style="color: black" class="modal-body">
+                        آیا مطمئن هستید؟
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">خیر</button>
+                        <button id="yes-btn" type="button" class="btn btn-primary" data-bs-target="#toast"
+                                data-bs-dismiss="modal">بله</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="toast" class="position-fixed bottom-0 end-0  p-3" style="z-index: 11;">
+            <div id="liveToast" class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div style="color: black" class="toast-body">
+                    <!--                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>-->
+                    عملیات موفقیت آمیز بود!
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <!--    بخش هشتم-->
-
-
-    <!--    بخش نهم-->
-    <div>
-
+    <div id="footer">
+        <footer class="footer navbar-fixed-bottom">
+            <p style="font-weight: bold; font-size: 13px; opacity: 0.4; color: #f8f9fa;
+             position: relative; text-align: center; padding-top: 10%; "> Copyright © 2021  |  Design by ImenPardazan </p>
+        </footer>
     </div>
 </main>
 <script>
     const myCarousel = document.getElementById('myCarousel')
     myCarousel.addEventListener('slide.bs.carousel', function () {
         const activeItem = this.querySelector(".active");
-        // console.log(activeItem);
+        console.log(activeItem);
         document.querySelector(".testi-img img").src = activeItem.getAttribute("data-img");
         document.querySelector(".testi-img .circle").style.backgroundColor = activeItem.getAttribute("data-color");
     })
+
+    const yesButton = document.getElementById('yes-btn')
+    yesButton.addEventListener('click', function () {
+        // document.getElementById('MyModal').modal('hide')
+        $('#news-border').get(0).reset()
+        $('.toast').toast({
+            animation: true,
+            delay: 2500,
+            position: 'top'
+            // backgroundColor: '#c91fff'
+        });
+        $('.toast').toast('show');
+    })
 </script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"
+></script>
+
+<!-- Light Switch -->
+<script src="themSwitcher/switch.js"></script>
 </body>
 </html>
