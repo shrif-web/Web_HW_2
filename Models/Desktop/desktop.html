@@ -29,7 +29,10 @@
 <!--    ></script>-->
 
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>ایمن پردازان :: تأمین امنیت در فضای سایبری</title>
+    <!-- add icon link -->
+		<link rel = "icon" href = "Files/red_logo_174x79.png"
+        type = "image/x-icon">
     <style>
         section{
             position: relative;
@@ -153,6 +156,80 @@
             height: 200px;
             background-color: #3b3939;
         }
+
+        #container1 img, #container2 img, #container3 img, #container4 img, #container5 img, #container6 img{
+            position: relative;
+            object-fit:fill;
+            width: 200px;
+            height: 150px;
+            border: 1px solid rgba(64, 0, 255, 0.256);
+        }
+
+        #container1 img:hover, #container4 img:hover {
+            z-index: 4;
+            transition: 0.3s all ease-in-out;
+            transform: scale(1.1)
+        }
+
+        #container2 img:hover, #container5 img:hover {
+        z-index: 4;
+        transition: 0.3s all ease-in-out;
+        transform: scale(1.1)
+        }
+
+        #container3 img:hover, #container6 img:hover {
+        z-index: 4;
+        transition: 0.3s all ease-in-out;
+        transform: scale(1.1)
+        }
+
+        #container1 {
+            position:relative;
+            height: 150px;
+            width: 200px;
+            left: 80%;
+        }
+
+        #container2 {
+            position: relative;
+            height: 150px;
+            width: 200px;
+            top: -25%;
+            left: 105%;
+        }
+
+        #container3 {
+            position: relative;
+            height: 150px;
+            width: 200px;
+            top: -50%;
+            left: 130%;
+        }
+
+       #container4 {
+            position:relative;
+            height: 150px;
+            width: 200px;
+            right: 80%;
+            top: 20%;
+        }
+
+        #container5 {
+            position: relative;
+            height: 150px;
+            width: 200px;
+            top: -25%;
+            right: 105%;
+        }
+
+        #container6 {
+            position: relative;
+            height: 150px;
+            width: 200px;
+            top: -70%;
+            right: 130%;
+        }
+
     </style>
 </head>
 <body style="font-family: 'B Nazanin',serif">
@@ -280,7 +357,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
                                         <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
                                     </svg>
-                                    <p>ویرایش متن فارسی</p>
+                                   <p>ویرایش متن فارسی</p>
                                 </li>
 
                             </ul>
@@ -350,12 +427,50 @@
             </div>
         </div>
 
-        <!--    بخش سوم-->
+    <!--    بخش سوم-->
+    <div style="width: 75%" id="gallery" class="container">
 
-        <!--    بخش چهارم-->
-        <div>
 
+
+    </div>
+
+    <!--    بخش چهارم-->
+    <div class="row justify-content-center">
+        <div style="width: 75%" id="activities" class="container">
+            <p style="font-weight: bold; font-size: 30px; padding-bottom: 30px; margin-right: 23%; margin-left: 30%;" class="text-right"> نرم‌افزارهای پیشگیری از نفوذ</p>
+            <p style="font-size: 20px; padding-bottom: 30px; margin-right: 23%; margin-left: 30%;" class="text-right">این شرکت نرم‌افزار ایمن داده را برای محافظت از پایگاه‌داده در شرکت‌های مختلف ارائه کرده است. هم‌چنین نرم‌افزار امداد به منظور بازیابی اطلاعات پس از حمله‌ی باج‌افزارها طراحی و پیاده‌سازی شده‌است.</p>
         </div>
+        <div style="width: 25%" class="container">
+            <div id="container1">
+                <img src="Files/container1.jpeg" class="img-responsive">
+              </div>
+              <div id="container2">
+                <img src="Files/container2.jpeg" class="img-responsive">
+              </div>
+              <div id="container3">
+                <img src="Files/container3.jpeg" class="img-responsive">
+              </div>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div style="width: 25%" class="container">
+            <div id="container4">
+                <img src="Files/container4.jpeg" class="img-responsive">
+            </div>
+            <div id="container5">
+                <img src="Files/container5.jpeg" class="img-responsive">
+            </div>
+            <div id="container6">
+              <img src="Files/container6.jpeg" class="">
+            </div>
+        </div>
+        <div style="width: 75%" id="activities" class="container">
+            <p style="font-weight: bold; font-size: 30px; padding-bottom: 30px; margin-left: 15%; margin-right: 40%;" class="text-right">نرم‌افزارهای خرید آنلاین</p>
+            <p style="font-size: 20px; padding-bottom: 30px; margin-left: 15%; margin-right: 40%;" class="text-right">شرکت ایمن‌پردازان محصولات مختلفی در حوزه‌ی تجارت الکترونیکی ارائه داده‌است تا فروشندگان محصولات مختلف، بتوانند در فضایی سالم به تبلیغ و تجارت بپردازند. هم‌چنین با فراهم کردن بسترهای امن برای پرداخت الکترونیک، اطمینان از فروشندگان و هم‌چنین تنوع محصولات، اعتماد مشتریان را نیز کسب کرده‌است.</p>
+        </div>
+    </div>
+
+
 
         <!--    بخش پنجم-->
         <div>
