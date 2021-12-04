@@ -4,6 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="themSwitcher/custom.css">
+    <!--    <link-->
+    <!--            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"-->
+    <!--            rel="stylesheet"-->
+    <!--            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"-->
+    <!--            crossorigin="anonymous"-->
+    <!--    />-->
+    <!--    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/carousel.rtl.css">-->
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!--    <script src="https://cdn.rtlcss.com/bootstrap/v4.3.1/js/bootstrap.min.js" integrity="sha384-2NsOVs5JcOR/wf4f2u5VYxUT+23fCbG29ajnpPYiyCZWF0dT4Ik3Qewqmf+pwm/d" crossorigin="anonymous"></script>-->
+    <!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -20,45 +38,68 @@
   <body>
     <div class="container-fluid px-0">
       <!-- Content here -->
-      <nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom">
-        <!-- Navbar content -->
+      <nav style="opacity: 0.8" class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark border-bottom">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Light Switch</a>
           <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown"
+                  aria-controls="navbarNavDropdown"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a  class="nav-link" aria-current="page" href="#header"><b>بخش اول</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#cards"><b>بخش دوم</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a  class="nav-link" href="#"><b>بخش سوم</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><b>بخش چهارم</b></a>
+              </li>
+              <li class="nav-item">
+                <a  class="nav-link" href="#"><b>بخش پنجم</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#comments"><b>بخش ششم</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#news"><b>بخش هفتم</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer"><b>بخش هشتم</b></a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+            <div class="d-flex">
+              <div class="form-check form-switch ms-auto mt-3 me-3">
+                <label class="form-check-label ms-3" for="lightSwitch">
+                  <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="25"
+                          fill="currentColor"
+                          class="bi bi-brightness-high"
+                          viewBox="0 0 16 16"
+                  >
+                    <path
+                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                    />
+                  </svg>
+                </label>
+                <input class="form-check-input" type="checkbox" id="lightSwitch" />
+              </div>
+            </div>
           </div>
+          <a class="navbar-brand">
+            <img src="Files/red_logo_174x79.png" width="100" height="39"></a>
         </div>
       </nav>
 
@@ -79,7 +120,7 @@
               />
             </svg>
           </label>
-          <input class="form-check-input" type="checkbox" id="lightSwitch" />
+<!--          <input class="form-check-input" type="checkbox" id="lightSwitch" />-->
         </div>
       </div>
 
